@@ -1,0 +1,176 @@
+form .input-group-btn.input-pix {
+    margin-top: 5px;
+}
+
+form .input-group .btn-pix {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 5%);
+    width: 100%;
+    height: 50px;
+    background-color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .input-group-btn .btn {
+    flex: 1;
+    height: 70px;
+    position: relative;
+}
+
+form .input-group-btn .btn:first-child {
+    margin-right: 2.5px;
+}
+
+form .input-group-btn .btn:last-child {
+    margin-left: 2.5px;
+}
+
+form .input-group-btn .btn label {
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    background-color: var(--white);
+
+    transition: all 0.3s;
+}
+
+form .input-group-btn .btn label svg {
+    height: 18px;
+}
+
+form .input-group-btn .btn input {
+    opacity: 0;
+}
+
+form .input-group-btn .btn input:focus + label {
+    background-color: var(--priceItem);
+    color: var(--white);
+}
+
+form .input-group-btn .btn input:checked + label {
+    background-color: var(--priceItem);
+    color: var(--white);
+}
+
+form .input-group-btn .btn label .desc-btn {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.content-price-info {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 4px 0;
+    padding: 5px 0;
+}
+
+.price-info {
+    display: flex;
+    padding: 1px 0;
+    justify-content: space-between;
+}
+
+.price-info span {
+    font-weight: bold;
+    width: 125px;
+    text-align: right;
+}
+
+.conclude {
+    width: 100%;
+    height: 55px;
+    background-color: var(--green);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: 700;
+    z-index: 9999;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.conclude .text-c {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.conclude .text-c .desc-c {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.conclude svg {
+    stroke-width: 3px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: #fff;
+    color: var(--green);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.input-group-btn.delivery-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.money-back {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.money-back .option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.money-back .option input {
+    width: 30px;
+    margin-right: 8px;
+    background: transparent;
+}
+
+.money-back .option label {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.pix-info{
+    width:100%;
+    margin-top:20px;
+    font-size:13px;
+    font-weight:bold;
+    text-align: center;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+
+    <title>Status</title>
+     <!-- JavaScript -->
+     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+  
+     <!-- CSS -->
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+     <!-- Default theme -->
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+     <!-- Semantic UI theme -->
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+     <!-- Bootstrap theme -->
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+     <!-- 
+         RTL version
+     -->
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.rtl.min.css"/>
+     <!-- Default theme -->
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.rtl.min.css"/>
+     <!-- Semantic UI theme -->
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.rtl.min.css"/>
+     <!-- Bootstrap theme -->
+     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.rtl.min.css"/>
+ 
+ 
+</head>
+<body>
+    <header class="mb-1 pt-1">
+        <img src="../../view/img/logo.png" style="width:20%; height:100%; padding:10px;" alt="">
+        <a href="../" id="alterStatus"> <-- Voltar </a>
+    </header>
+
+    <div class="container d-flex">
+        <div class="container">
+            <h4>Selecione aonde deseja que apareça seus produtos</h4>
+            <p>Por padrão todos os itens cadastrados ficam disponíveis em ambas plataformas(cardápio online e mesas). Para mudar isso organize os status e clique em salvar</p>
+        </div>
+        <div>
+            <button class="btn btn-success" onclick="sucesso()">Salvar</button>
+        </div>
+    </div>
+
+    <main class="container d-flex">
+        <div class="container" id="table_1">  
+            <table class="table mr-5">
+                <tbody id="impar">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container" id="table_2">
+            <table class="table mr-5">
+                <tbody id="par">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        async function getproducts(){
+            const url = "../../procedimentos/getproductsalter1.php";
+
+                const response = await (await fetch(url)).json();
+
+                console.log(response)
+                response.forEach((doc, i) => {
+                    var value = '';
+                    console.log(doc)
+                    if(doc.status == 'ambos'){
+                        value = 'Ambos'
+                    }
+                    if(doc.status == 'smesas'){
+                        value = 'Mesa'
+                    }
+                    if(doc.status == 'sapp'){
+                        value = 'Delivery'
+                    }
+                    if(doc.status == 'inactive'){
+                        value = 'Desativado'
+                    }
+                    if(i%2 == 0){
+                        document.getElementById('par').innerHTML += `
+                        <tr>
+                                <td>#${doc.id_product}</td>
+                                <td>${doc.name}</td>
+                                <td class="form-group">
+                                    <select class="form-control" onchange="alterStatusproduct(${doc.id_product})" id="${doc.id_product}">
+                                        <option value="${doc.status}">${value}</option>
+                                        <option value="ambos">Alterar para Ambos</option>
+                                        <option value="smesa">Alterar para Mesa</option>
+                                        <option value="sapp">Alterar para Delivery</option>
+                                        <option value="D.Ambos">Desativar ambos</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            `
+                    }else{
+                        //impar
+                        //par
+                        document.getElementById('impar').innerHTML += `
+                        <tr>
+                                <td>#${doc.id_product}</td>
+                                <td>${doc.name}</td>
+                                <td class="form-group">
+                                    <select class="form-control" onchange="alterStatusproduct(${doc.id_product})" id="${doc.id_product}">
+                                        <option value="${doc.status}">${value}</option>
+                                        <option value="ambos">Alterar para Ambos</option>
+                                        <option value="smesa">Alterar para Mesa</option>
+                                        <option value="sapp">Alterar para Delivery</option>
+                                        <option value="D.Ambos">Desativar ambos</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            `
+                    }
+                })
+        }
+        getproducts()
+        
+        async function alterStatusproduct(id){
+            var comand = document.getElementById(id).value
+              $.ajax({
+            url: "../../procedimentos/alterStatusProduct.php?id=" + id + "&comand=" + comand,
+            async: false,
+            type: "get",
+            dataType: "json",
+        }).then(docResult => {
+            console.log(docResult)
+        });    
+        alertify.success('Alterado com sucesso!');
+
+        }
+        const sucesso = ()=>{
+            Swal.fire({
+            title: 'Sucesso',
+            text: 'Status do item alterado com sucesso.',
+            icon: 'success',
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Okay",
+            });   
+            setTimeout(() => {
+                document.location.reload(true);   
+            }, 2000);
+        }
+       
+    </script>
+</body>
+</html>

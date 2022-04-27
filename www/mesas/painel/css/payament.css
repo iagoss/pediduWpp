@@ -1,0 +1,50 @@
+#tables{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#numbers{
+    width: 70%;
+}
+#count{
+    height: 500px;
+    width: 30%;
+    overflow: auto;
+    background-color: rgb(245, 245, 245);
+}
+
+#comand{
+    height: 300px;
+    overflow: auto;
+    background-color: rgb(245, 245, 245);
+}
+
+.title-List{
+    display: flex;
+    justify-content: space-around;
+}
+
+.count{
+    font-size: 8px!important;
+}
+#values{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.value{
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.deleteValue{
+    position: absolute;
+    top: 0;
+}

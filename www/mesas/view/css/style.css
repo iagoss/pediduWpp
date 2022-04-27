@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+}
+header{
+    height:  80px; 
+    color: #B90A00;
+    width: 100%;
+    background-color: #B90A00;
+    display: flex;
+}
+.containerMy{
+    max-width: 1000px;
+    padding: 2%;
+    margin:0 auto ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mesaNum{    
+    margin-top: 25px;
+    width: 10%;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 1%;
+}
+@media(max-width: 800px){
+    .mesaNum{
+        width: 23%;
+        height: 100px;
+        border: 1px solid black;
+        text-align: center;
+        cursor: pointer;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        color: white;
+        background-color: green;
+    }
+}
+.mesaNum h1{
+    width: 100%;    
+    margin-top: 30px;
+}
+.mesaNum:hover{
+    background-color: #B90A00;
+    color: white;
+}
+/*Categorias*/
+#categorys{
+    width: 100%;
+    overflow: auto;    
+    box-sizing: border-box;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    display: flex;
+    overflow-y: hidden;
+    padding: 15px;
+}
+.categorys{
+    width: auto;
+    padding: 5px;
+    cursor: pointer;
+    height: 118%;
+    background-color: white;
+    border:  1px solid black;
+    border-radius: 5px;
+    margin-right: 15px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    
+}
+.categorys h2{
+    margin-top:20%; 
+    background-color: white;   
+}
+.categorys h2:hover{
+    margin-top:20%; 
+    background-color: #B90A00;   
+}
+.categorys:hover{
+    color: white;
+    background-color: #B90A00;
+}
+
+#products{
+    margin-top: 24px;
+    display: flex;
+    flex: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 2%;
+}
+/*Botao finaçizar*/
+.buttonFinalize{
+    top: 89%;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    cursor: pointer;
+}
+
+.buttonFinalize button{
+    background-color: green;
+    color: white;
+    width: 100%;    
+    height: 70px;
+}
+
+
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    overflow-y: auto;
+    justify-content: center;
+}
+.products{
+    margin-bottom: 2%;
+    width: 35%;
+    padding: 5px;
+    cursor: pointer;
+    height: auto;
+    background-color: #B90A00;
+    color: white;
+    border:  1px solid black;
+    margin-right: 15px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding: 10px;
+    word-break: break-all;    
+}
+
+/*buttons*/
+
+#buttons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#buttons button{
+    width: 80%;
+    margin: 25px;
+    height: 80px;
+    font-size: 25px;
+}
+
+
+ .myModal{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    -webkit-animation: close 1s;
+    animation: close 1s;    
+    display: none;
+    
+} 
+.selectType{
+    width: 45px;
+}
+.myModalOpen{
+    width: 100%;
+    background-color: rgb(219, 219, 219);
+    height: 100vh;
+    position: absolute;
+    display: flex;    
+    flex-wrap: wrap;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes close{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes close{
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.headerModal{
+    padding: 5px;
+    text-align: right;
+    width: 70%;
+}
+
+.title{
+    padding: 5px;
+    text-align: right;
+    width: 20%;
+}
+
+.options{
+    width: 100%;
+    text-align: center;
+}
+.options h2{
+    cursor: pointer;
+}
+
+.options {
+    cursor: pointer;
+}
+
+#additionais{
+    display: flex;
+    height: 100%;
+    flex-direction: column;    
+    border-top: 1px solid black;
+}
+
+.adittionaisSelect{
+    margin-top: 15px;
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid black;
+    height: 100px;
+}
+.nameAdditionais{
+    flex: 2;
+    margin-left: 10px;
+}
+.butonType{
+    display:flex;
+    justify-content: center;
+}
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);    
+    margin-top: 40px;
+}
+.buttonsPositive{
+    margin-top: 8px;
+    background-color:green;
+    color: white;
+    cursor:pointer;
+    height: 50px;
+ }
+ .buttonsNegative{
+     margin-top: 8px;
+     background-color:#B90A00;
+     color: white;            
+     cursor:pointer;
+     height: 50px;
+  }
+
+ .valueAdittional{
+     margin: 8px 10px 0px 10px;
+ }
+ h2{
+     margin:0 5px
+ }
+
+ .description{
+     margin-top: 25px;
+     background-color: green;
+     color: white;
+     padding: 10px;
+ }
+
+ .description > input{
+    background-color: green;    
+    color: green;
+ }
+
+
+ .text-sizing{
+     font-size: 10px;
+ }
+
+ .valueAdditional{
+     width:40px;
+     margin-top: 10px;
+ }
+ 
+ .checkbox{
+    margin-top: 25px;
+    min-width: 30px;
+    min-height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+ }
+
+ .productInCart{
+     padding: 5px;
+     border-bottom: 1px solid black;
+     margin-bottom: 10px;
+
+ }
+
+
+ .butonTypeCart{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 10px ;
+}
+
+
+#descProd{
+    width: 100%;
+    height: 70px;
+}
+
+.divDesc{
+    padding: 25px;
+}
+
+#numMesa{
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}

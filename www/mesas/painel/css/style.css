@@ -1,0 +1,309 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;  
+    font-size: 15px;
+}
+
+body{
+    background-color: rgb(224, 224, 224)!important;
+    width: 100%;
+}
+
+
+header{
+    color: white;
+    width: 100%;
+    height: 80px;
+    background-color: #B90A00;
+
+}
+
+.configs{
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+#autoimpress{
+    display: flex;
+}
+
+.autoimpress {
+   border-radius: 22px ;
+   padding: 7px;
+   background-color: hsl(2, 76%, 59%) ;
+   color: white;
+}
+
+.autoimpress:hover{
+    transition-duration: 0.5s;
+    background-color: #B90A00;
+}
+
+#autoimpress  label {
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+#flexSwitchCheckChecked{
+    width: 60px;
+    padding-top: 10px;
+    height: 30px;
+}
+
+.list{
+    border: none;
+    margin-left: 12px;
+    padding: 10px;
+    background-color: #d9534f;
+    color: white;
+}
+
+.list:hover{
+    transition-duration: 0.5s;
+    background-color: #B90A00;
+}
+
+/*BOTTONS*/
+
+.add_waiter{
+    border-radius: 4px ;
+    border: none;
+    padding: 7px;
+    background-color: hsl(2, 76%, 59%) ;
+    color: white;
+    cursor: pointer;
+}
+
+.add_waiter:hover{
+    transition-duration: 0.5s;
+    background-color: #B90A00;
+}
+
+.delete{
+    border-radius: 4px ;
+    border: none;
+    padding: 7px;
+    background-color: hsl(2, 76%, 59%) ;
+    color: white;
+    cursor: pointer; 
+}
+
+.delete:hover{
+    transition-duration: 0.5s;
+    background-color: #B90A00;
+}
+
+#buttons{
+    display: flex;
+    width: 75%;
+    justify-content: right;
+}
+
+#buttons > button {
+    margin: 5px;
+    padding: 10px;
+}
+
+/*CONTAINER*/
+
+#items{
+    display: flex;
+    justify-content: space-evenly;
+    width: 86%;
+}
+
+
+#order{
+    padding: 15px;
+    width: 30%;
+    text-transform: uppercase;
+    background-color: white!important;
+}
+
+#order2{
+    padding: 15px;
+    width: 30%;
+    text-transform: uppercase;
+    background-color: white!important;
+}
+
+#order3{
+    padding: 15px;
+    width: 30%;
+    text-transform: uppercase;
+    background-color: white!important;
+}
+
+.title1{
+    background-color: #FD8D43!important;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.title2{
+    background-color: #FEB743!important;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.title3{
+    background-color: #43FD76!important;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.danger{
+    border: none;
+    padding: 7px;
+    width: 96px;
+    color: white;
+    background-color:#B60B01;
+}
+
+.Inverse{
+    border: none;
+    padding: 7px;
+    margin: 8px;
+    color: black;
+    width: 96px;
+    background-color:#888888;
+}
+
+.success{
+    border: none;
+    padding: 7px;
+    width: 96px;
+    background-color:#41FE78;
+}
+
+.productInCart{
+    margin: 5px;
+    background-color:  white!important;;
+    padding: 10px;
+}
+
+.productInCartInner{
+    margin: 5px;
+    background-color:  rgb(245, 245, 245)!important;;
+    padding: 10px;
+}
+
+.tables{
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+}
+
+.numMesa{
+    margin-right: 25px;
+}
+
+#tables{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tableNum{
+    height: 60px!important;
+    margin: 20px;
+}
+
+.valueSub{
+    text-align: right;
+    margin: 10px;
+}
+
+
+
+.graphcs{
+    overflow: auto;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-top: 10px;
+}
+#dia, #mes, #ano{
+    width: 33%;
+    background-color: hsl(2, 76%, 59%);
+    margin: 10px;
+    border-radius: 22px;
+    text-align: center;
+    padding: 30px;
+    color: wheat;
+}
+
+ #mes{
+    width: 33%;
+    background-color: #E02204;
+    margin: 10px;
+    border-radius: 22px;
+    text-align: center;
+    padding: 30px;
+    color: wheat;
+}
+#ano{
+    width: 33%;
+    background-color: #F72307;
+    margin: 10px;
+    border-radius: 22px;
+    text-align: center;
+    padding: 30px;
+    color: wheat;
+}
+.infos{
+    overflow: auto;
+}
+.dates{
+    height: 30px;
+    display: flex;
+
+}
+
+
+.gp > img{
+    width: 100%!important;
+    height: 40px!important;
+}
+
+
+
+
+
+.fontImpressPricipal{
+}
+
+.fontImpressComand{
+}
+.fontImpressGlobalty{
+    
+}
+
+
+#alterStatus{
+}
+header > a{
+    color: white!important;
+    margin-right: 70%;
+
+}
+
+.infoHeaders{
+    display: flex;
+    padding-top: 10px;
+}
+.options{
+    text-align: right;
+    margin-top: 15px;
+    align-items: flex-end;
+    margin-left: 15%;
+
+}
+.options > a{
+    color: white;
+}

@@ -1,0 +1,11 @@
+[21-May-2021 17:56:20 America/Sao_Paulo] PHP Notice:  Undefined index: a in /home3/pedidu/public_html/admin/mdl/admin/logs.php on line 2
+[21-May-2021 17:56:20 America/Sao_Paulo] PHP Notice:  Undefined index: a in /home3/pedidu/public_html/admin/mdl/admin/logs.php on line 29
+[21-May-2021 17:56:20 America/Sao_Paulo] PHP Notice:  Undefined variable: mdl in /home3/pedidu/public_html/admin/mdl/admin/logs.php on line 31
+[21-May-2021 17:56:20 America/Sao_Paulo] PHP Notice:  Undefined index: p in /home3/pedidu/public_html/admin/mdl/admin/logs.php on line 32
+[21-May-2021 17:56:20 America/Sao_Paulo] PHP Notice:  Undefined index: p in /home3/pedidu/public_html/admin/mdl/admin/logs.php on line 33
+[21-May-2021 17:56:20 America/Sao_Paulo] PHP Notice:  Undefined index: p in /home3/pedidu/public_html/admin/mdl/admin/logs.php on line 34
+[21-May-2021 17:56:20 America/Sao_Paulo] PHP Notice:  Undefined index: search in /home3/pedidu/public_html/admin/mdl/admin/logs.php on line 36
+[21-May-2021 17:56:20 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function getSearchForm() in /home3/pedidu/public_html/admin/mdl/admin/logs.php:41
+Stack trace:
+#0 {main}
+  thrown in /home3/pedidu/public_html/admin/mdl/admin/logs.php on line 41

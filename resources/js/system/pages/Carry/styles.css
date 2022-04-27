@@ -1,0 +1,258 @@
+main {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.based-check {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--green);
+    border-radius: 100%;
+    margin-top: 30px;
+}
+
+.based-check.red {
+    background-color: #F44336;
+}
+
+.based-check svg {
+    color: var(--white);
+    width: 35px;
+    height: 35px;
+    stroke-width: 5px;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.id-demand {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 20px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.desc {
+    margin-top: 15px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.option {
+    font-size: 14px;
+    text-align: left;
+}
+
+ul.carry {
+    margin-top: 30px;
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+ul.carry li {
+    width: 100%;
+    height: 45px;
+    background-color: var(--white);
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    padding: 0 7px;
+    font-size: 14px;
+    position: relative;
+}
+
+ul.carry li svg {
+    position: absolute;
+    color: var(--white);
+    stroke-width: 4px;
+    height: 20px;
+    left: 11px;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+ul.carry li:before {
+    content: '';
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    background-color: var(--yellow);
+    margin-right: 12px;
+}
+
+ul.carry li.check:before {
+    background-color: var(--green);
+}
+
+ul.carry li.pin {
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: uppercase;
+    margin-top: 30px;
+    justify-content: center;
+    font-size: 15px;
+}
+
+ul.carry li.red {
+    background-color: #dc3b3a;
+    margin-top: 5px;
+}
+
+ul.carry li.pin:before {
+    display: none;
+}
+
+.float-btn {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: var(--white);
+    background: var(--priceItem);
+}
+
+.float-btn .icon {
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
+}
+
+.pix-btn{
+    background: white;
+    border-radius:6px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor:pointer;
+    box-shadow:0 1px 10px rgb(0 0 0 / 5%);
+}
+
+.pix-btn > svg{
+    margin-right:10px;
+}
+
+.background-modal{
+    background:rgba(0, 0, 0, .3);
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+}
+
+.modal{
+    background:white;
+    width:calc(100% - 40px);
+    height:auto;
+    padding:20px;
+    border-radius:6px;
+    top:50%;
+    left:50%;
+    position:fixed;
+    transform:translate(-50%, -50%);
+    z-index:9999;
+}
+
+.modal-close{
+    background:#F44336;
+    float:right;
+    margin-right:-20px;
+    margin-top:-60px;
+    padding:7.5px 15px;
+    border-radius:6px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+}
+
+.modal-header{
+    background: white;
+    width:100%;
+    margin-top:20px;
+    margin-bottom:30px;
+    border-radius:6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.modal-header > svg{
+    margin-right:20px;
+}
+
+.text-type{
+    width:100%;
+    margin-bottom:10px;
+    text-align: center;
+}
+
+.text-copy{
+    width:100%;
+    font-weight:bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input-pix-key{
+    background:white;
+    width:100%;
+    padding:15px 20px;
+    margin:15px 0;
+    font-size:15px;
+    text-align: center;
+    border:1px solid rgba(0, 0, 0, .1);
+    box-shadow:0 1px 10px rgb(0 0 0 / 5%);
+}
+
+.text-info{
+    width:100%;
+    margin:20px 0;
+    padding:0 20px;
+    font-size:13px;
+    font-weight:bold;
+    text-align: center;
+}
+
+.text-info-delivery{
+    width:100%;
+    margin:20px 0;
+    padding:0 20px;
+    font-size:15px;
+    font-weight:bold;
+    color:#d35400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.send-whatsapp-btn{
+    background:var(--priceItem);
+    padding:15px 30px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    font-size:15px;
+    color:white;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+
+.send-whatsapp-btn > svg{
+    margin-right:10px;
+}

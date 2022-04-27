@@ -1,0 +1,131 @@
+#optional {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.title-o {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: left;
+}
+
+.desc-o {
+    opacity: 0.6;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.checkbox-o {
+    width: 100%;
+    position: relative;
+}
+
+.checkbox-o label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-o input {
+    opacity: 0;
+    display: none;
+}
+
+.checkbox-o label .checked {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.checkbox-o label .checked svg {
+    height: 18px;
+    stroke-width: 4px;
+    color: #FFF;
+}
+
+.checkbox-o input:checked+label .checked {
+    background-color: #4CAF50;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.checkbox-o label .text-c .title-c {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.checkbox-o label .text-c .desc-c {
+    opacity: 0.8;
+    font-weight: 200;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.checkbox-o label .price-c {
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 6px;
+    color: #4CAF50;
+}
+
+.more-less-additional {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.more-less-additional .btns {
+    display: flex;
+}
+
+.more-less-additional .btns div {
+    padding: 7px;
+    border-radius: 5px;
+    max-width: 40px;
+    max-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.more-less-additional .infos-c .title {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.more-less-additional .infos-c .desc {
+    font-weight: 200;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.more-less-additional .infos-c .price {
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 6px;
+    color: #4CAF50
+}
+
+#optional .input-group, #optional .more-less-additional {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+#optional.inactive #add-0 {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

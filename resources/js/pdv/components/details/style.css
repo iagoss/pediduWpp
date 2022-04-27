@@ -1,0 +1,35 @@
+.pdv-details h1 {
+    font-size: 24px;
+}
+
+.pdv-details .content {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    margin-top: 5px;
+    padding: 6px;
+}
+
+.pdv-details .content .line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pdv-details .content .line .form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    font-size: 16px;
+    flex: 1;
+}
+
+.pdv-details .content .line .form-group.number {
+    max-width: 80px;
+}
+
+.pdv-details .content .line .form-group input {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 7px;
+}

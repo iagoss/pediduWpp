@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#E0E0E0;
+}
+
+
+header{
+    background-color: #B80A00;
+}
+
+header, a{
+    color: white!important;
+}
+#alterStatus{
+    color: white!important;
+
+}
+
+select, .form-control{
+    margin-left: 25%;
+    cursor: pointer;
+    border: 1.8px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 125px;
+}
+
+td{
+    text-align: left;
+}
+
+h4{
+    font-weight: bold;
+}
+
+option{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn, .btn-success{
+    width: 120px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1c291b ;
+    background-color: #60C863;
+    margin-top: 33px;
+}
+
+#table_1{
+    background-color: white;
+    border: 0.5px solid rgb(245, 245, 245);
+    border-radius: 5;
+}
+
+#table_2{
+    background-color: white;
+    border: 0.5px solid rgb(245, 245, 245);
+    border-radius: 5;
+}

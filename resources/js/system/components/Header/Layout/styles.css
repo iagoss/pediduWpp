@@ -1,0 +1,76 @@
+header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+header .logo {
+    width: 192px;
+    height: 192px;
+    background-color: var(--white);
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin-top: 136px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+}
+
+.new-header header {
+    height: 180px;
+    margin-bottom: 0;
+}
+
+.new-header .informations {
+    height: 80px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    padding: 0 20px;
+    display: flex;
+    position: relative;
+}
+
+.new-header .informations .logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -80px;
+    background-color: white;
+}
+
+.new-header .informations .infos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.new-header .informations .infos .name {
+    font-weight: 500;
+}
+
+.new-header .informations .infos .description {
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.new-header .informations .infos .status {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.new-header .informations .infos .status.open {
+    color: var(--green);
+}
+
+.new-header .informations .infos .status.close {
+    color: #F44336;
+}

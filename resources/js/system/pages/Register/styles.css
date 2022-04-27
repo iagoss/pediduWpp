@@ -1,0 +1,7 @@
+.input-group.adress input:first-child {
+    width: 70%;
+}
+
+.input-group.adress input:last-child {
+    width: 30%;
+}

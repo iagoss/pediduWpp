@@ -1,0 +1,12 @@
+  
+  .cartQuantityAnimation {
+    animation: go-back 2s ;
+  }
+  @keyframes go-back {
+    from {
+      transform: translateY(500px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,1 @@
+[21-May-2021 17:56:24 America/Sao_Paulo] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home3/pedidu/public_html/admin/vendor/composer/backup_autoload_static.php on line 6

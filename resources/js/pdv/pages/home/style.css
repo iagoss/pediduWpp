@@ -1,0 +1,18 @@
+.pdv-containers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.pdv-inserted-containers h1 {
+    font-size: 24px;
+}
+
+.pdv-inserted-containers .content {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    margin-top: 5px;
+    padding: 6px;
+}

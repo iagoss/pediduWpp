@@ -1,0 +1,65 @@
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 15px;
+    padding-right: 64px;
+    border-radius: 4px;
+}
+
+.category {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.category .swiper-slide {
+    width: auto;
+}
+
+.category .based-cat {
+    border-radius: 6px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.category .based-cat .icon-cat {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center;
+    -webkit-mask-image: linear-gradient(transparent, transparent);
+    background-color: var(--primary);
+    transition: all 0.2s;
+}
+
+.category .based-cat .name-cat {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+    color: var(--title);
+    transition: all 0.2s;
+}
+
+.category .based-cat.active {
+    background-color: var(--primary);
+}
+
+.category .based-cat.active .icon-cat {
+    background-color: var(--white);
+}
+
+.category .based-cat.active .name-cat {
+    color: var(--white);
+}

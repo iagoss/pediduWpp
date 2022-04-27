@@ -1,0 +1,35 @@
+.products-list .title-categorie {
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.products-list ul {
+    padding: 0 6px;
+}
+
+.products-list li {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1.2px solid rgba(46, 154, 208, 0.6);
+    list-style: none;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.products-list li p {
+    margin: 0;
+    color: rgba(46, 154, 208, 0.6);
+    font-weight: bold;
+}
+
+.products-list li span {
+    color: #c7c7c7;
+    font-weight: 500;
+}
+
+.products-list li .price {
+    margin-top: 8px;
+}

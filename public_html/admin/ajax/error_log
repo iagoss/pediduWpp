@@ -1,0 +1,110 @@
+[18-May-2021 19:38:34 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderDeliveryList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:56:54 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderDeliveryList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:56:54 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderNewsList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:56:54 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderFinishList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:57:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderFinishList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:57:23 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderNewsList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:57:24 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderNewsList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:57:24 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderDeliveryList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:57:24 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderDeliveryList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:57:24 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderFinishList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:59:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderNewsList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:59:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderDeliveryList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 19:59:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderFinishList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 20:01:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderDeliveryList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 20:01:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderFinishList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 20:01:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderNewsList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 20:02:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderDeliveryList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 20:02:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderFinishList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 20:02:28 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderNewsList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 20:04:58 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderDeliveryList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 20:04:58 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderFinishList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20
+[18-May-2021 20:04:58 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/ajax/orderNewsList.php(5): include_once()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20

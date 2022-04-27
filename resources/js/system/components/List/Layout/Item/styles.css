@@ -1,0 +1,74 @@
+.based-list .item {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 6px;
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.05);
+}
+
+.based-list .item .picture-i {
+    min-height: 92px;
+    min-width: 92px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.based-list .item .based-t {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+    text-align: left;
+}
+
+.based-list .item .based-t .title-i {
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--black);
+}
+
+.based-list .item .based-t .desc-i {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.5;
+    color: var(--black);
+    margin-top: 5px;
+}
+
+.based-list .item .based-t .price-i {
+    font-weight: 600;
+    color: var(--priceItem);
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.based-list .item .btn-added {
+    background-color: var(--priceItem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0 2px;
+    transition: opacity 0.2s;
+    height: 100%;
+}
+
+.based-list .item .btn-added svg {
+    height: 16px;
+    stroke-width: 4px;
+}
+
+.based-list .item .btn-added:active {
+    opacity: 0.7;
+}

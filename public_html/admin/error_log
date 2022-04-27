@@ -1,0 +1,5 @@
+[18-May-2021 19:59:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home3/pizzaeuropa2/public_html/admin/lib/functions.php:20
+Stack trace:
+#0 /home3/pizzaeuropa2/public_html/admin/admin.php(16): include()
+#1 {main}
+  thrown in /home3/pizzaeuropa2/public_html/admin/lib/functions.php on line 20

@@ -1,0 +1,224 @@
+#buyed-items {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#buyed-items li {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 6px;
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+#buyed-items li .item-image {
+    min-height: 92px;
+    min-width: 92px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+#buyed-items li .product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 6px 16px;
+}
+
+#buyed-items li .product-info .item,
+#buyed-items li .product-info .additional .add,
+#buyed-items li .product-info .total-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+#buyed-items li .product-info .item {
+    font-weight: bolder;
+}
+
+#buyed-items li .product-info .additional {
+    padding: 6px 0;
+}
+
+#buyed-items li .product-info .additional.out-observation {
+    border-radius: 5px;
+    border-bottom: 1.3px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 6px;
+}
+
+#buyed-items li .product-info .observation {
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+    margin-bottom: 6px;
+    padding: 6px;
+    font-size: 13px;
+}
+
+#buyed-items li .product-info .additional .add {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#buyed-items li .product-info .total-price {
+    font-weight: bolder;
+}
+
+#buyed-items li .control-quantity {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 6px;
+    margin-right: 6px;
+}
+
+#buyed-items li .control-quantity .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    color: #FFF;
+    font-weight: 600;
+    width: 32px;
+    min-height: 32px;
+    transition: all 0.3s;
+    border: 0;
+    height: 32px;
+    padding: 0;
+}
+
+#buyed-items li .control-quantity .btn:active{
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s;
+}
+
+#buyed-items li .control-quantity .btn.remove-item {
+    background: #DC3545;
+}
+
+.conclude {
+    width: 100%;
+    height: 55px;
+    background-color: #4CAF50;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    padding: 0 15px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-top: 4px;
+    font-weight: 700;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.conclude .text-c {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.conclude .text-c .desc-c {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.conclude svg {
+    stroke-width: 3px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: #FFF;
+    color: var(--green);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.warning-cart {
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.warning-cart a {
+    margin-top: 8px;
+    background: var(--green);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cupom-form .input-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.cupom-form .input-group input {
+    flex: 1;
+    display: flex;
+}
+
+.cupom-form .input-group button {
+    width: auto;
+    height: 43px;
+    background-color: var(--green);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    padding: 0 12px;
+    color: var(--white);
+    margin-left: 6px;
+}
+
+.cupom-form .input-group button[disabled]{
+    filter: grayscale(1);
+    cursor: not-allowed;
+}
+
+.cupom-form .input-group input[disabled]{
+    filter: grayscale(1);
+    cursor: not-allowed;
+}
+
+.small-button {
+    width: 38px;
+    height: 38px;
+    background: #2f8ab9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 33px;
+}
+
+.content-price-info {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 4px 0;
+    padding: 5px 0;
+}
+
+.price-info {
+    display: flex;
+    padding: 1px 0;
+    justify-content: space-between;
+}
+
+.price-info span {
+    font-weight: bold;
+    width: 125px;
+    text-align: right;
+}
+

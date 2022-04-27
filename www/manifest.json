@@ -1,0 +1,15 @@
+{
+    "short_name": "GetDelivery",
+    "name": "GetDelivery",
+    "icons": [
+        {
+            "src": "https://pedido.fun/uploads/acp-profile-be079a5b19.png",
+            "sizes": "130x119",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "index.php",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

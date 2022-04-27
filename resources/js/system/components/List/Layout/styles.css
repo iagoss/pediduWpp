@@ -1,0 +1,12 @@
+.based-list {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.based-list .title-list {
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: left;
+}

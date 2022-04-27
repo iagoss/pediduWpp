@@ -1,0 +1,1 @@
+[21-May-2021 17:56:12 America/Sao_Paulo] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home3/pedidu/public_html/admin/vendor/chillerlan/php-qrcode/src/Data/QRDataInterface.php on line 14

@@ -1,0 +1,30 @@
+{
+    "short_name": "PEDIDU APP",
+    "name": "Pedidu Garçom",
+    "description": "Gerencie as mesas do seu restaurante de forma mais facil.",
+    "start_url": "/mesas/view",
+    "display": "standalone",
+    "scope": "/PEDIDU",
+    "orientation": "any",
+    "prefer_related_applications": false,
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "status_bar": "default",
+    "icons": [
+      {
+          "src": "images/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
+          "src": "images/icon-256x256.png",
+          "sizes": "256x256",
+          "type": "image/png"
+      },
+      {
+          "src": "images/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
+  ]
+  }

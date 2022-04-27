@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos Mesa</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/payament.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+      <!-- Required scripts -->
+    <script type="text/javascript" src="js/qz-tray.js"></script>
+
+    <!-- Pollyfills -->
+    <script type="text/javascript" src="js/sample/promise-polyfill-8.1.3.min.js"></script>
+    <script type="text/javascript" src="js/sample/whatwg-fetch-3.0.0.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+
+    <!-- 
+        RTL version
+    -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.rtl.min.css"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.rtl.min.css"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.rtl.min.css"/>
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.rtl.min.css"/>
+
+
+  </head>
+<body  >
+    <Header>
+    </Header>
+    <div class="container">
+        <div class="graphcs">
+                <div id="dia">
+                    <h1>R$ 00,00</h1>
+                </div>
+                <div id="mes">
+                    <h1>R$ 00,00</h1>                    
+                </div>
+                <div id="ano">
+                    <h1>R$ 00,00</h1>                    
+                </div>
+        </div>    
+        <div class="dates">
+            <div class="">
+                <input type="date" id="dateInitial" class="form-control">
+            </div>
+            <div>
+                <input type="time" id="HourInitial" class="form-control">
+            </div>
+            <div style="margin-left: 10px; margin-right: 10px;">
+                AS
+            </div>
+            <div class="">
+                <input type="date" id="dateFinal" class="form-control">
+            </div>
+            <div>
+                <input type="time" id="HourFinal" class="form-control" onchange="getInfosVendas()">
+            </div>
+        </div>
+        <div class="infos">
+        <table class="table table-hover">
+        <thead>
+            <tr class="table-danger">
+            <th scope="col">Nome</th>
+            <th scope="col">Dados</th>
+            </tr>
+        </thead>
+        <tbody id="dados">
+                <th>Número de pedidos:</th><th>..</th> </tr>
+                <tr><th>Debito:</th><th>..</th></tr></tr>
+                <tr><th>pix:</th> <th>..</th></tr>
+                <tr><th>picpay:</th> <th>..</th></tr>
+                <tr><th>crédito:</th> <th>..</th></tr>
+                <tr><th>dinheiro:</th><th>..</th> </tr>
+                <tr><th>Total:</th> <th>.</th></tr>
+        </tbody>
+        </table>
+        </div>
+    </div>
+    <script>
+        async function getdados(){
+            let totalDays = 0
+            let totalMounth = 0
+            let totalYear = 0
+            var horasOdersPedidosDays = []
+            var data = new Date();
+            var dia = String(data.getDate()).padStart(2, '0');
+            var mes = String(data.getMonth() + 1).padStart(2, '0');
+            var ano = data.getFullYear();
+            dataAtual =  ano + '-' + mes + '-' + dia;
+
+
+            console.log(dataAtual);
+            const urlTable = "../procedimentos/graphics.php";
+            dados = await (await fetch(urlTable)).json();
+            console.log(dados)
+
+
+            dados.map((doc, i) =>{
+                var dataGet = doc.date.split(" ")//Separa data e hora do date time sendo indece 0 data e indice 1 hora
+                horasOdersPedidosDays.push(dataGet[0])
+                let orderGetDate = dataGet[0].split('-')
+                let GetDateatual = dataAtual.split('-')
+                if(dataAtual == dataGet[0]){
+                    totalDays += parseFloat(doc.dados['subtotal'])
+                    document.getElementById('dia').innerHTML = `Vendido no dia<br><h1>R$ ${parseFloat(totalDays).toFixed(2)}</h1>`
+                }
+                if(GetDateatual[1] == orderGetDate[1] & GetDateatual[0] == orderGetDate[0]){
+                    totalMounth += parseFloat(doc.dados['subtotal'])
+                    document.getElementById('mes').innerHTML = `Vendido no mes<br><h1>R$ ${parseFloat(totalMounth).toFixed(2)}</h1>`
+                    
+                }
+                if(GetDateatual[0] == orderGetDate[0]){
+                    totalYear += parseFloat(doc.dados['subtotal'])
+                    document.getElementById('ano').innerHTML = `Vendido no ano<br><h1>R$ ${parseFloat(totalYear).toFixed(2)}</h1>`
+                }
+
+                doc.dados
+
+            })
+        }
+        getdados()
+
+        const getInfosVendas = async ()=>{
+            var debito = 0
+            var credito = 0
+            var pix = 0
+            var picpay = 0
+            var dinheiro = 0
+            var numPedidos = 0
+
+            dateInitial = document.getElementById('dateInitial').value 
+            hourinitial = document.getElementById('HourInitial').value
+            initialDate = dateInitial + ' ' +  hourinitial
+
+            dateFinal = document.getElementById('dateFinal').value 
+            HourFinal = document.getElementById('HourFinal').value
+            finalDate = dateFinal + ' ' +  HourFinal
+
+            body = {
+                    init: initialDate,
+                    final: finalDate
+                }
+            dados = await (await fetch(`../procedimentos/datecompar.php?init=${initialDate}&final=${finalDate}`)).json();
+
+            dados.forEach(element => {
+                numPedidos += 1
+                element['dados']['typePayament'].forEach(doc => {
+                    console.log(doc)
+                    if(doc.type == 'debito'){
+                        debito += parseFloat(doc.value)
+                        console.log(parseFloat(debito).toFixed(2))
+                    }
+                    if(doc.type == 'pix'){
+                        pix += parseFloat(doc.value)
+                        console.log(parseFloat(pix).toFixed(2))
+                    }
+                    if(doc.type == 'credito'){
+                        credito += parseFloat(doc.value)
+                        console.log(parseFloat(credito).toFixed(2))
+                    }
+                    if(doc.type == 'picpay'){
+                        picpay += parseFloat(doc.value)
+                        console.log(parseFloat(picpay).toFixed(2))
+                    }
+                    if(doc.type == 'dinheiro'){
+                        dinheiro += parseFloat(doc.value)
+                        console.log(parseFloat(dinheiro).toFixed(2))
+                    }
+                    var total = debito + credito +  picpay + pix + dinheiro
+                    document.getElementById('dados').innerHTML = `
+                    <th>Número de pedidos:</th><th>${numPedidos}</th> </tr>
+                    <tr><th>Debito:</th><th>${parseFloat(debito).toFixed(2)} R$</th></tr></tr>
+                    <tr><th>pix:</th> <th>${parseFloat(pix).toFixed(2)} R$</th></tr>
+                    <tr><th>picpay:</th> <th>${parseFloat(picpay).toFixed(2)} R$</th></tr>
+                    <tr><th>crédito:</th> <th>${parseFloat(credito).toFixed(2)} R$</th></tr>
+                    <tr><th>dinheiro:</th><th>${parseFloat(dinheiro).toFixed(2)} R$</th> </tr>
+                    <tr><th>Total:</th> <th>${parseFloat(total).toFixed(2)} R$</th></tr>
+                    `
+                })
+            });
+
+        }
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>

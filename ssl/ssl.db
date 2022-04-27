@@ -1,0 +1,57 @@
+--- 
+files: 
+  certificate: 
+    wpp_pedidu_app_e8269_eb095_1682523639_fb5256540c2ce7f7e2669db89d6d97fc: 
+      created: '1650987639'
+      domains: 
+        - wpp.pedidu.app
+        - mail.wpp.pedidu.app
+        - www.wpp.pedidu.app
+        - cpanel.wpp.pedidu.app
+        - webmail.wpp.pedidu.app
+        - webdisk.wpp.pedidu.app
+        - cpcontacts.wpp.pedidu.app
+        - cpcalendars.wpp.pedidu.app
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Cert for “wpp.pedidu.app”
+      id: wpp_pedidu_app_e8269_eb095_1682523639_fb5256540c2ce7f7e2669db89d6d97fc
+      is_self_signed: 1
+      issuer.commonName: wpp.pedidu.app
+      issuer.organizationName: ~
+      key_algorithm: rsaEncryption
+      modulus: e82698bc82f4f7b4ee096067b90cc72037b9894948e37de0294b424c10489eb125b678e4b858d6e5f4254da694fffb9d233e8a24ff25e8f4091e824455c0733ab71538b4a0a567da1524885290f6d2944ca2b9233af80c4fe5775bf740d7f040c09fe7771330de22ce2edbb4e2b7354213d7a0fa6e8d0bf8cc9e7d7c031bdd7bd57f5cf532332fb95499fd6663c0c21248428a44cc7e9eda7f6e256db7958cd8fb60ac32fbc4ec905b77e76282e02bdd583b91e8fc63d95af3a2c7a1396fb63575623b959593c0a0b452befecbc32c81b6b47cc8c2adf2d27844c8ef412e0ce291f197b1e75977ae192e953721ac3cf9fb5f199a172272cfc5a7878f524eb095
+      modulus_length: 2048
+      not_after: '1682523639'
+      not_before: '1650987639'
+      serial: 019277be2c
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: wpp.pedidu.app
+      validation_type: ~
+  key: 
+    e8269_eb095_d9a6b33548627f73b0ef48287bbbbfbe: 
+      created: '1650987639'
+      ecdsa_curve_name: ~
+      ecdsa_public: ~
+      friendly_name: Key for “wpp.pedidu.app”
+      id: e8269_eb095_d9a6b33548627f73b0ef48287bbbbfbe
+      key_algorithm: rsaEncryption
+      modulus: e82698bc82f4f7b4ee096067b90cc72037b9894948e37de0294b424c10489eb125b678e4b858d6e5f4254da694fffb9d233e8a24ff25e8f4091e824455c0733ab71538b4a0a567da1524885290f6d2944ca2b9233af80c4fe5775bf740d7f040c09fe7771330de22ce2edbb4e2b7354213d7a0fa6e8d0bf8cc9e7d7c031bdd7bd57f5cf532332fb95499fd6663c0c21248428a44cc7e9eda7f6e256db7958cd8fb60ac32fbc4ec905b77e76282e02bdd583b91e8fc63d95af3a2c7a1396fb63575623b959593c0a0b452befecbc32c81b6b47cc8c2adf2d27844c8ef412e0ce291f197b1e75977ae192e953721ac3cf9fb5f199a172272cfc5a7878f524eb095
+      modulus_length: 2048
+indexes: 
+  certificate: 
+    modulus: 
+      e82698bc82f4f7b4ee096067b90cc72037b9894948e37de0294b424c10489eb125b678e4b858d6e5f4254da694fffb9d233e8a24ff25e8f4091e824455c0733ab71538b4a0a567da1524885290f6d2944ca2b9233af80c4fe5775bf740d7f040c09fe7771330de22ce2edbb4e2b7354213d7a0fa6e8d0bf8cc9e7d7c031bdd7bd57f5cf532332fb95499fd6663c0c21248428a44cc7e9eda7f6e256db7958cd8fb60ac32fbc4ec905b77e76282e02bdd583b91e8fc63d95af3a2c7a1396fb63575623b959593c0a0b452befecbc32c81b6b47cc8c2adf2d27844c8ef412e0ce291f197b1e75977ae192e953721ac3cf9fb5f199a172272cfc5a7878f524eb095: 
+        wpp_pedidu_app_e8269_eb095_1682523639_fb5256540c2ce7f7e2669db89d6d97fc: ~
+    subject.commonName: 
+      wpp.pedidu.app: 
+        wpp_pedidu_app_e8269_eb095_1682523639_fb5256540c2ce7f7e2669db89d6d97fc: ~
+uniques: 
+  certificate: 
+    friendly_name: 
+      Cert for “wpp.pedidu.app”: wpp_pedidu_app_e8269_eb095_1682523639_fb5256540c2ce7f7e2669db89d6d97fc
+  key: 
+    friendly_name: 
+      Key for “wpp.pedidu.app”: e8269_eb095_d9a6b33548627f73b0ef48287bbbbfbe
+    modulus:ecdsa_curve_name:ecdsa_public: 
+      e82698bc82f4f7b4ee096067b90cc72037b9894948e37de0294b424c10489eb125b678e4b858d6e5f4254da694fffb9d233e8a24ff25e8f4091e824455c0733ab71538b4a0a567da1524885290f6d2944ca2b9233af80c4fe5775bf740d7f040c09fe7771330de22ce2edbb4e2b7354213d7a0fa6e8d0bf8cc9e7d7c031bdd7bd57f5cf532332fb95499fd6663c0c21248428a44cc7e9eda7f6e256db7958cd8fb60ac32fbc4ec905b77e76282e02bdd583b91e8fc63d95af3a2c7a1396fb63575623b959593c0a0b452befecbc32c81b6b47cc8c2adf2d27844c8ef412e0ce291f197b1e75977ae192e953721ac3cf9fb5f199a172272cfc5a7878f524eb095: e8269_eb095_d9a6b33548627f73b0ef48287bbbbfbe
